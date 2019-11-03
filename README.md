@@ -1,5 +1,8 @@
 this is the first commit!
 
-add then unstage
 
 modify sm
+
+learn git diff command
+
+lorem dsaf
