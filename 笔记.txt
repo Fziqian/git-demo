@@ -12,7 +12,7 @@ git init
 git status
 git add file
 (use "git rm --cached <file>..." to unstage)
-	# 将暂存区文件移出代码库的跟踪
+	# 将暂存区文件移出代码库的跟踪 ???
 git rm README.md	#删除工作区文件和暂存区的文件跟踪，并在下次提交时不纳入版本管理
 git rm -f README.md	# 此方法为--force及强制删除工作区与暂存区的文件，用于当工作区与暂存区不一致时
 以上rm方法都不会删除仓库里的文件
@@ -63,3 +63,20 @@ git commit --amend	#更正最近一次的提交
 git commit --amend -m 'msg'	# 加-m 不会使用vim打开编辑massage
 
 git mv 旧文件名 新文件名	#重命名文件
+
+git branch			#查看当前分支
+git branch 分支名		#创建一个新的分支
+git checkout 分支名		#切换一个分支
+
+将上面两步合并
+git checkout -b 分支名		#创建并切换到一个新的分支
+
+git log --decorate		#decorate 装饰
+				#显示提交指向的分支(branch)和tag
+
+git log --decorate --oneline	#--oneline 只显示快照的id和说明
+
+git log --decorate --oneline --graph --all	#--graph 以图表的方式显示   --all 显示所有的分支
+
+git merge 分支名		#将指定的分支合并到本分支中
+git branch -d(--delete) 分支名	#删除分支
