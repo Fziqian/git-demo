@@ -1,8 +1,8 @@
-this is the first commit!
+this is the first commit!2
+
+faasdfd
 
 
 modify sm
 
-learn git diff command
-
-lorem dsaf
+learn git diff command22
