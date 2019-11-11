@@ -3,7 +3,6 @@ git config --global user.name 'FZiqian'
 git config --global user.email 'xxx@qq.com'
 
 git config --local	#只对某个仓库有效
-git config [--global/--local/--system] --list	# 显示所有的变量
 
 git 三种状态
 modified (已修改)
@@ -11,8 +10,7 @@ staged/tracked (已暂存)
 committed (已提交)
 
 #初始化git项目
-git init	#在已有的项目文件夹下
-git init my_project	#新建一个文件夹my_project 使用git管理
+git init 
 git status
 git add file
 (use "git rm --cached <file>..." to unstage)

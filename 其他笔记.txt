@@ -1,0 +1,12 @@
+vim 编辑器
+i	INSERT模式
+ESC	退出INSERT模式
+:q!	退出
+:wq	保存退出
+
+--------------------------------------------
+
+linux
+pwd	显示当前目录
+cp ../test.txt	test.txt	拷贝文件
+mv oldpath newpath	重命名、
