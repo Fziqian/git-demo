@@ -51,6 +51,7 @@ git commit --amend -m 'msg'	# 加-m 不会使用vim打开编辑massage
 
 #更新以前的提交massage
 git rebase -i parentCommitID(hash)  #rebase 变基 -i 交互式
+				#使用rebase在本地修改未push的可以，但是最后不要修改已经push了的
 
 回滚指定id的快照（可向前/向后滚）
 git reset a1fsda(快照的hash值)
