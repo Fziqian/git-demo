@@ -69,8 +69,8 @@ git commit --amend -m 'msg'	# 加-m 不会使用vim打开编辑massage
 
 git mv 旧文件名 新文件名	#重命名文件
 
-git branch			#查看当前分支
-git branch -a			#查看所有分支
+git branch			#查看分支
+git branch -av			#查看所有分支，并显示对应的最新commit
 git branch 分支名		#创建一个新的分支
 git checkout 分支名		#切换一个分支
 
