@@ -49,6 +49,9 @@ git reset --hard HEAD^ (此时工作区与仓库会同步回滚，no unstaged,no
 git commit --amend	#更正最近一次的提交
 git commit --amend -m 'msg'	# 加-m 不会使用vim打开编辑massage
 
+#更新以前的提交massage
+git rebase -i parentCommitID(hash)  #rebase 变基 -i 交互式
+
 回滚指定id的快照（可向前/向后滚）
 git reset a1fsda(快照的hash值)
 
