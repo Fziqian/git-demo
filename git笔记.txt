@@ -42,6 +42,7 @@ HEAD~2 上上个 HEAD~3 上上上个
 HEAD^ 上一个 HEAD^^^ 上上上个
 
 git reset 的参数
+git reset 测试
 git reset [--mixed] HEAD^ （默认）效果同上
 git reset --soft HEAD^ (此时会显示有staged但未commit的文件，相当于可以重新commit一次代码)
 git reset --hard HEAD^ (此时工作区与仓库会同步回滚，no unstaged,no uncommitted)
@@ -105,3 +106,5 @@ git branch -D 分支名		#强制删除没有merge的分支
 reset 与 checkout的区别
 reset主要用于版本快照的切换
 checkout主要用于切换分支
+
+git checkout -- filename	#将指定文件从暂存区里恢复到工作区
