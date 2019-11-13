@@ -35,6 +35,7 @@ git log
 
 版本回退
 git reset HEAD		#将暂存区恢复回版本库
+git reset HEAD -- filename # 将指定暂存区的文件恢复为版本库
 git reset HEAD^		#将仓库的版本倒退一个 
 			#此时因为版本库倒退，本地的代码不变，所以暂存区会显示有unstaged的修改
 			#此时如果想将工作区与仓库同步 可使用git checkout -- <file>
@@ -107,3 +108,9 @@ reset主要用于版本快照的切换
 checkout主要用于切换分支
 
 git checkout -- filename	#将指定文件从暂存区里恢复到工作区
+
+git stash	#将暂存区的内容临时存放到stash 清空暂存区
+git stash list	#查看stash列表
+#提交紧急任务后恢复stash
+git stash apply #将stash列表里的挑出来恢复工作区和暂存区
+git stash pop   #将stash列表里的跳出来恢复后并将stash列表里的对应stash删除
