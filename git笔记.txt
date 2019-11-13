@@ -34,6 +34,7 @@ git commit add -u	#更新提交所有已经被git跟踪的文件
 git log
 
 版本回退
+git reset HEAD		#将暂存区恢复回版本库
 git reset HEAD^		#将仓库的版本倒退一个 
 			#此时因为版本库倒退，本地的代码不变，所以暂存区会显示有unstaged的修改
 			#此时如果想将工作区与仓库同步 可使用git checkout -- <file>
@@ -57,7 +58,7 @@ git rebase -i parentCommitID(hash)  #rebase 变基 -i 交互式
 git rebase -i parentCommitID(hash) #squash
 
 回滚指定id的快照（可向前/向后滚）
-git reset a1fsda(快照的hash值)
+git reset a1fsda(快照的hash值) 
 
 git reflog #可以查看所有的版本历史id（包括已经回滚的）
 
@@ -69,10 +70,11 @@ git reset 版本快照id 文件名/路径
 
 diff命令	#比较不同状态或版本文件的不同
 
-git diff	# 默认比较的是【工作区】与当前版本库的不同
+git diff	# 默认比较的是【工作区】与暂存区的不同
 git diff 版本号1 版本号2	#比较两个版本的不同
 git diff 版本号			#比较【工作区】与指定版本的不同
 git diff --cached [版本号]	#--cached参数表示比较的是暂存区与版本库的不同
+git diff -- filename		#比较指定文件
 
 git mv 旧文件名 新文件名	#重命名文件
 
