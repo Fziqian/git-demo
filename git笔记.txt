@@ -114,3 +114,7 @@ git stash list	#查看stash列表
 #提交紧急任务后恢复stash
 git stash apply #将stash列表里的挑出来恢复工作区和暂存区
 git stash pop   #将stash列表里的跳出来恢复后并将stash列表里的对应stash删除
+
+.gitignore
+#忽略doc已经doc文件夹下所有文件
+doc/ 
