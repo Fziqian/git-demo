@@ -132,3 +132,7 @@ git push --set-upstream remoteName/branchName branchName //将设置上游的远
 git push	//push到远程仓库
 git push remoteName --all //将所有的分支都push到远程仓库
 git merge --allow-unrelated-histories branchName //合并允许无关联的版本仓库 有时候在github上面创建项目为非空，合并本地仓库时会用到
+
+使用github创建版本库，上传本地代码
+git remote add origin https://github.com/Fziqian/git-demo.git
+git push -u origin master
