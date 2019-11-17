@@ -1,1 +1,2 @@
 this is in branch test2.
+add sm in master.
