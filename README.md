@@ -208,3 +208,5 @@ git merge --allow-unrelated-histories branchName //合并允许无关联的版�
 git remote add origin https://github.com/Fziqian/git-demo.git
 
 git push -u origin master
+
+使用github clone以后，使用git checkout -b branchName origin/branchName //将远端的分支clone并切换
