@@ -123,7 +123,8 @@ doc/
 git clone --bare /path/my/project/.git new.git #哑协议
 git clone --bare file:///path/my/project/.git new.git #智能协议（带进度条，传输进行了压缩优化）
 
-git remote #查看远程协议
+git remote #查看远程仓库
+git remote -v #查看远程仓库详细信息
 git remote add remoteName file:///path/my/project/new.git #添加一个远程仓库
 git remote remove remoteName
 git remote rename old new
