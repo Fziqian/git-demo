@@ -118,3 +118,11 @@ git stash pop   #将stash列表里的跳出来恢复后并将stash列表里的�
 .gitignore
 #忽略doc已经doc文件夹下所有文件
 doc/ 
+
+git clone --bare /path/my/project/.git new.git #哑协议
+git clone --bare file:///path/my/project/.git new.git #智能协议（带进度条，传输进行了压缩优化）
+
+git remote #查看远程协议
+git remote --add remoteName file:///path/my/project/new.git #添加一个远程仓库
+git push --set-upstream remoteName/branchName branchName #将设置上游的远程仓库分支指向本地分支
+git push	#push到远程仓库
